@@ -5,7 +5,7 @@ const router = express.Router()
 const checkuserauth = require('../middleware/auth')
 
 //UserController
-router.get('/getalluser',checkuserauth,UserController.getalluser)
+router.get('/getalluser',UserController.getalluser)
 router.get('/getuserdetail',checkuserauth,UserController.getuserdetail)
 router.post('/userinsert',UserController.userinsert)
 router.post('/verifylogin',UserController.verifylogin)

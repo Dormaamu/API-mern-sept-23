@@ -12,7 +12,8 @@ cloudinary.config({
 
 
 class ProductController {
-
+   //admin
+   //yha se le k sir n bnwayi h
     static CreateProduct = async (req, res) => {
         try {
             const file = req.files.image
@@ -40,6 +41,31 @@ class ProductController {
             console.log(err)
         }
     }
+
+    static getallproductdetail =async(req,res)=>{
+        try{
+
+        }catch(error){
+            console.log(error)
+        }
+    }
+
+    static updateproduct =async(req,res)=>{
+        try{
+
+        }catch(error){
+            console.log(error)
+        }
+    }
+
+    static deleteproduct =async(req,res)=>{
+        try{
+
+        }catch(error){
+            console.log(error)
+        }
+    }
+    ///yaha tk sir n bnwayi h
 
     static productdisplay = async (req, res) => {
         const data = await ProductModel.find();
@@ -106,11 +132,7 @@ class ProductController {
     // }
 }
 
-module.exports = ProductController
 
-// static getallproduct = async(req,res)=>{
-
-// } 
 // static getproductdetails = async(req,res)=>{
 
 // } 
@@ -120,4 +142,5 @@ module.exports = ProductController
 // static deleteproduct = async(req,res)=>{
 
 // } 
+module.exports = ProductController
 
